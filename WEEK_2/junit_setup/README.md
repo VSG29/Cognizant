@@ -22,4 +22,21 @@ Set up JUnit 4.13.2 using Maven.
 
 ## Result
 
-JUnit was successfully configured and a sample test executed successfully. 
+JUnit was successfully configured and a sample test executed successfully.
+
+---
+
+# Exercise 3 - Assertions
+
+## Objective
+Use different JUnit assertions to validate test results.
+
+## Assertions Used
+- `assertEquals()`
+- `assertTrue()`
+- `assertFalse()`
+- `assertNull()`
+- `assertNotNull()`
+
+## Result
+All assertions executed successfully and the test passed.
