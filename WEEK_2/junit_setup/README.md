@@ -40,3 +40,20 @@ Use different JUnit assertions to validate test results.
 
 ## Result
 All assertions executed successfully and the test passed.
+
+---
+
+# Exercise 4 - AAA Pattern
+
+## Objective
+Learn the Arrange-Act-Assert (AAA) testing pattern and use setup and teardown methods.
+
+## Concepts Used
+- Arrange
+- Act
+- Assert
+- @Before
+- @After
+
+## Result
+The test successfully demonstrated the AAA pattern. The setup method executed before the test, and the teardown method executed after the test.
