@@ -5,18 +5,31 @@ import static org.mockito.Mockito.*;
 
 public class MyServiceTest {
 
+    // Exercise 1
     @Test
     public void testExternalApi() {
 
-        // Arrange
         ExternalApi mockApi = mock(ExternalApi.class);
+
         when(mockApi.getData()).thenReturn("Mock Data");
+
         MyService service = new MyService(mockApi);
 
-        // Act
         String result = service.fetchData();
 
-        // Assert
         assertEquals("Mock Data", result);
+    }
+
+    // Exercise 2
+    @Test
+    public void testVerifyInteraction() {
+
+        ExternalApi mockApi = mock(ExternalApi.class);
+
+        MyService service = new MyService(mockApi);
+
+        service.fetchData();
+
+        verify(mockApi).getData();
     }
 }
