@@ -7,7 +7,7 @@ function App()
       <CalculateScore
         Name={"Steve"}
         School={"DNV Public School"}
-        total={284}
+        total={284}   
         goal={3}
       />
     </div>
