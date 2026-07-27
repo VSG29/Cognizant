@@ -1,0 +1,14 @@
+.st2,
+.v1,
+.mystyle1 {
+    width: 25%;
+    float: left;
+    padding: 20px;
+    margin: 20px;
+    min-height: 420px;
+}
+
+.v1,
+.mystyle1 {
+    border-left: 4px solid green;
+}
