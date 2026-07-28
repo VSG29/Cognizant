@@ -6,8 +6,9 @@
 
 <hr>
 
-<button [disabled]="!isPortalActive"
-        (click)="onEnrollClick()">
+<button
+  [disabled]="!isPortalActive"
+  (click)="onEnrollClick()">
   Enroll Now
 </button>
 
@@ -16,9 +17,9 @@
 <hr>
 
 <input
-type="text"
-placeholder="Search Course"
-[(ngModel)]="searchTerm">
+  type="text"
+  placeholder="Search Course"
+  [(ngModel)]="searchTerm">
 
 <p>Searching for: {{ searchTerm }}</p>
 
@@ -26,14 +27,14 @@ placeholder="Search Course"
 
 <h3>Statistics</h3>
 
-<p><strong>Courses Available:</strong>12</p>
+<p><strong>Courses Available:</strong> {{ availableCourses }}</p>
 
-<p><strong>Enrolled:</strong>3</p>
+<p><strong>Enrolled:</strong> 3</p>
 
-<p><strong>GPA:</strong>3.8</p>
+<p><strong>GPA:</strong> 3.8</p>
 
 <!--
-[property]  -> One-way binding (Component → DOM)
+[property] -> One-way binding (Component → DOM)
 
 [(ngModel)] -> Two-way binding (DOM ↔ Component)
 -->
